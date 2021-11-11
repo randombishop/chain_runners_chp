@@ -1,6 +1,25 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cowboy Hat Pink</title>
+</head>
 <body>
+
+<div style="z-index:1000;
+            position:fixed;
+            width:200px;
+            left:40px;
+            top:40px;
+            text-align:center;
+            font-family: monospace">
+    <img src="img/logo.png" width="60" height="37"/> <br/>
+    <strong>Cowboy Hat Pink<br/>Chain Runners</strong><br/><br/>
+    Catch them if you can!<br/><br/>
+    By <a href="https://www.the23.wtf">the23.wtf</a>
+</div>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -44,7 +63,7 @@ for (var i=0 ; i<num_avatars ; i++) {
         .attr("width", avatar_size)
         .attr("height", avatar_size)
         .append("svg:image")
-        .attr("xlink:href", 'img/'+i+'.svg')
+        .attr("xlink:href", 'img/png/'+i+'.png')
         .attr("width", avatar_size)
         .attr("height", avatar_size)
         .attr("x", 0)
@@ -105,3 +124,4 @@ function collide(node) {
 }
 
 </script>
+</body>
